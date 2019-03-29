@@ -8,7 +8,7 @@ pipeline {
 
             sh "composer install"
             sh "composer dump-autoload"
-            sh "php artisan clear:cache"
+            sh "php artisan cache:clear"
 
             }
         }
